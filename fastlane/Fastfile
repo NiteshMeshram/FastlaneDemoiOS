@@ -21,13 +21,11 @@ platform :ios do
     gym(export_method: "ad-hoc")
     build_app(workspace: "DemoApp.xcworkspace", scheme: "DemoApp")
     #upload_to_testflight
-
-    appcenter_upload(
-      api_token: "e6c1edcb9603a673e535f13d0354f7b69b60f205",
-      owner_name: "nitesh.meshram@v2solutions.com",
-      app_name: "DemoApp",
+    
+    hockey(
+      api_token: "9a172758bdfe4fe4b10299bfc9ea519a",
       ipa: "./DemoApp.ipa",
-      notify_testers: true 
+      notes: "Changelog"
     )
    
   end
